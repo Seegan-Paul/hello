@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: hello
+
+/sample:
+  /say-hello:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: "Hello! Nice to meet you"
+  
+  /say-bye:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: "Bye! will meet again"
